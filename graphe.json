@@ -1,14 +1,31 @@
 {
-  "villes": {
-    "Rennes": [["Caen", 75], ["Paris", 110], ["Nantes", 45], ["Bordeaux", 130]],
-    "Caen": [["Rennes", 75], ["Paris", 50], ["Lille", 65]],
-    "Lille": [["Caen", 65], ["Paris", 70], ["Nancy", 100], ["Dijon", 120]],
-    "Paris": [["Rennes", 110], ["Caen", 50], ["Lille", 70], ["Nantes", 80], ["Dijon", 60], ["Bordeaux", 150]],
-    "Nantes": [["Rennes", 45], ["Paris", 80], ["Bordeaux", 90]],
-    "Bordeaux": [["Rennes", 130], ["Nantes", 90], ["Paris", 150], ["Lyon", 100]],
-    "Dijon": [["Paris", 60], ["Lille", 120], ["Nancy", 75], ["Lyon", 70], ["Grenoble", 75]],
-    "Nancy": [["Lille", 100], ["Dijon", 75], ["Grenoble", 80], ["Lyon", 90]],
-    "Lyon": [["Bordeaux", 100], ["Dijon", 70], ["Grenoble", 40], ["Nancy", 90]],
-    "Grenoble": [["Nancy", 80], ["Dijon", 75], ["Lyon", 40]]
-  }
+    "metadata": {
+        "description": "Réseau routier Projet ALMF51",
+        "type": "Undirected Weighted Graph"
+    },
+    "nodes": [
+        "Paris", "Lille", "Rennes", "Caen", "Nantes", "Bordeaux", 
+        "Lyon", "Dijon", "Nancy", "Grenoble", "Marseille"
+    ],
+    "edges": [
+        {"u": "Lille", "v": "Paris", "w": 50},
+        {"u": "Lille", "v": "Nancy", "w": 70},
+        {"u": "Caen", "v": "Rennes", "w": 65},
+        {"u": "Caen", "v": "Paris", "w": 75},
+        {"u": "Rennes", "v": "Nantes", "w": 45},
+        {"u": "Rennes", "v": "Paris", "w": 80},
+        {"u": "Nantes", "v": "Bordeaux", "w": 90},
+        {"u": "Nantes", "v": "Paris", "w": 130},
+        {"u": "Paris", "v": "Nancy", "w": 110},
+        {"u": "Paris", "v": "Dijon", "w": 60},
+        {"u": "Paris", "v": "Lyon", "w": 100},
+        {"u": "Nancy", "v": "Dijon", "w": 47},
+        {"u": "Nancy", "v": "Grenoble", "w": 100},
+        {"u": "Dijon", "v": "Lyon", "w": 75},
+        {"u": "Bordeaux", "v": "Lyon", "w": 150},
+        {"u": "Bordeaux", "v": "Marseille", "w": 120},
+        {"u": "Lyon", "v": "Grenoble", "w": 40},
+        {"u": "Lyon", "v": "Marseille", "w": 90},
+        {"u": "Grenoble", "v": "Marseille", "w": 80}
+    ]
 }
